@@ -30,8 +30,6 @@ end
 
 get '/dashboard' do
   require_login
-  puts "Environment in server : #{settings}"
-  p settings
   haml :dashboard
 end
 
