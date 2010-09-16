@@ -1,0 +1,21 @@
+!!! 1.1
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %title Auth
+    %link{:rel => 'stylesheet', :href => '/css/login_style.css', :type => 'text/css'}
+  %body
+    %form#login-form{:action => '/login', :method => 'post'}
+      %fieldset
+      
+        %label{:for => 'login'} Email
+        %input#login{:type => 'text', :name => 'email'}
+        .clear
+      
+        %label{:for => 'password'} Password
+        %input#password{:type => 'password', :name => 'password'}
+        .clear          
+      
+        %br
+        %input.button{:type => 'submit', :style => 'margin: -20px 0 0 287px;', :name => 'commit', :value => 'Log in'}
+        %br
+        %span.message= flash[:message]
