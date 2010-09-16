@@ -1,5 +1,5 @@
 require 'rubygems'
-%w(haml sinatra rack-flash json rest_client active_support sequel sample).each  { |gem| require gem}
+%w(haml sinatra rack-flash json rest_client active_support).each  { |gem| require gem}
 %w(user).each {|model| require model}
 %w(sinatra/common_helper middleware).each {|feature| require feature}
 
